@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.header {
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  color: White;
+  font-size: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 16px;
+  background-color: white;
+  color: rgb(34, 34, 34);
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.btn:hover {
+  background-color: rgb(255, 171, 156);
+}
+
+img {
+  height: 500px;
+  width: 500px;
+}
+.card {
+  width: 540px;
+  margin: auto;
+  border: gray solid 1px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.button {
+  padding: 5px 10px;
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  border: gray solid 1px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.button:hover {
+  background-color: rgb(228, 49, 18);
+}
+
+.form_container {
+  width: 50%;
+  margin: auto;
+}
+.text_heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.border_form {
+  border: 1px solid rgb(218, 218, 218);
+}
